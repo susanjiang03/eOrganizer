@@ -1,9 +1,15 @@
 <section data-ng-controller="ArticlesController" data-ng-init="find()">
 	<h1>Here are some events that are going on!</h1><br>
-	<ul class="articles unstyled">
+	<ul class="articles unstyled" id="list">
 		<li data-ng-repeat="article in articles">
-			<h3><a data-ng-href="#/articles/{{article.id}}">{{article.title}}</a></h3>			
+		<div class="article">
+			<h3><a data-ng-href="#/articles/{{article.id}}">{{article.title}}</a></h3>	
+			<h5>School : {{article.school}}     &nbsp;&nbsp; Category : {{article.category}}  </h5> 
+			<h5>CUNYcoins: {{article.rewardCoins}}  
+			<img src="./img/cunycode/coins.png" alt="cunycoins" style="height:10%;width: 10%;"></h5>
+			<h5> Date : {{article.date}}	</h5>	
 			<p>Hosted by {{article.User.name}}</p>
+		</div>
 		</li>
 	</ul>
 	<div data-ng-show="global.authenticated">

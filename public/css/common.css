@@ -31,3 +31,21 @@ footer p {
  border-radius: 50%;
 
 }
+
+
+ul#list{
+    padding: 0%;
+}
+
+ul#list li{
+
+    width: 30%;
+    margin-top:3%;
+    margin-left:3%;
+    display: inline-block;
+} 
+
+.article{
+    border-style: ridge;
+     height: 50%;
+}
