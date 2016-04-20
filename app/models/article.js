@@ -11,7 +11,7 @@ module.exports = function(sequelize, DataTypes) {
 			date: DataTypes.DATE,
 			time: DataTypes.TIME,
 			location: DataTypes.STRING,
-			catogory: DataTypes.STRING,
+			category: DataTypes.STRING,
 			rewardCoins: DataTypes.INTEGER
 
 
