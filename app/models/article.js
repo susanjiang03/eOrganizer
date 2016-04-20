@@ -7,6 +7,7 @@ module.exports = function(sequelize, DataTypes) {
 			content: DataTypes.TEXT,
 			isPrivate: DataTypes.BOOLEAN,
 
+            school: DataTypes.STRING,
 			date: DataTypes.DATE,
 			time: DataTypes.TIME,
 			location: DataTypes.STRING,

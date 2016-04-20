@@ -5,8 +5,14 @@ angular.module('mean.articles').controller('ArticlesController', ['$scope', '$ro
 
     $scope.create = function() {   
         var article = new Articles({
+            school: this.school,
             title: this.title,
             content: this.content,
+            rewardCoins: this.rewardCoins,
+            category: this.category,
+            location: this.location,
+            date: this.date,
+            time: this.time,
             isPrivate: $scope.theBoolean
         });
 

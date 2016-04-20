@@ -2,6 +2,12 @@
     <span>{{article.User.name}}</span>
     <h2>{{article.title}}</h2>
     <div>{{article.content}}</div>
+    <div>School :  {{article.school}}</div>
+     <div>reward Coins:  {{article.rewardCoins}}</div>
+     <div>Category:  {{article.category}}</div>
+     <div>Location : {{article.location}}</div>
+     <div>Date : {{article.date}}</div>
+     <div>Time  : {{article.time}}</div>
     <div data-ng-show="global.user.id == article.User.id">
         <a class="btn" href="/#/articles/{{article.id}}/edit">
         	Edit
